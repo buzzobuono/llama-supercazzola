@@ -50,20 +50,47 @@ Please be aware that intermediate training checkpoints of the network might occu
 
 ```console
 $ ./inference.sh # interence on LATEST checkpoint
+...
 
+ Antani un po' della sbrindolona come se fosse Antani come facevo?
+Ho provato con
+llama_print_timings:        load time =      13,65 ms
+llama_print_timings:      sample time =       3,99 ms /    20 runs   (    0,20 ms per token,  5013,79 tokens per second)
+llama_print_timings: prompt eval time =       7,19 ms /     7 tokens (    1,03 ms per token,   973,44 tokens per second)
+llama_print_timings:        eval time =      79,87 ms /    19 runs   (    4,20 ms per token,   237,88 tokens per second)
+llama_print_timings:       total time =      98,41 ms /    26 tokens
+Log end
 ```
 or
 
 ```console
 $ ./inference.sh "Mi scusi?! Ma lei a clacsonato?" # interence on LATEST checkpoint with custom prompt
+...
 
+ Mi scusi?! Ma lei a clacsonato?
+No, volevo dire dei tre telefoni qual è quello col prefisso
+llama_print_timings:        load time =      13,23 ms
+llama_print_timings:      sample time =       3,99 ms /    20 runs   (    0,20 ms per token,  5012,53 tokens per second)
+llama_print_timings: prompt eval time =       8,52 ms /    15 tokens (    0,57 ms per token,  1760,77 tokens per second)
+llama_print_timings:        eval time =      86,27 ms /    19 runs   (    4,54 ms per token,   220,24 tokens per second)
+llama_print_timings:       total time =     105,97 ms /    34 tokens
+Log end
 ```
 for a custom prompt
 
 You can altro try intermediate checkpoints to better understand how the network progressivery increase its performance.
 
 ```console
-$ ./inference.sh "Mi scusi?! Ma lei a clacsonato?" chk-supercazzola-x16-220.gguf # interence on LATEST checkpoint
+$ ./inference.sh "Mi scusi?! Ma lei a clacsonato?" models/ggml-supercazzola-512x16-f32-100.gguf # interence on a previous checkpoint
+...
+
+ Mi scusi?! Ma lei a clacsonato? fosse Ant,olaistra c siapp come’ per ancheani? cheNo t laataoco
+llama_print_timings:        load time =      20,78 ms
+llama_print_timings:      sample time =       4,10 ms /    20 runs   (    0,20 ms per token,  4880,43 tokens per second)
+llama_print_timings: prompt eval time =      11,57 ms /    15 tokens (    0,77 ms per token,  1296,46 tokens per second)
+llama_print_timings:        eval time =      80,77 ms /    19 runs   (    4,25 ms per token,   235,23 tokens per second)
+llama_print_timings:       total time =     103,60 ms /    34 tokens
+Log end
 
 ```
 
