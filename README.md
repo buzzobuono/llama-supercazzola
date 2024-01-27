@@ -39,4 +39,4 @@ This project was conceived and developed with love by [buzzobuono] for education
 
 ### License:
 
-This project is released under the [GPL-3.0] license. Refer to the LICENSE file for more information.
+This project is released under the [MIT License] license. Refer to the LICENSE file for more information.
