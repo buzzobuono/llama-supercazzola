@@ -9,7 +9,7 @@ The `llama-supercazzola` project offers students 🎓 a unique opportunity to ex
 ### Features:
 
 - Language model training and inference using `llama.cpp` framework.
-- Generation of long "supercazzola" in response to every questions 🎉.
+- Generation of short "supercazzola" in response to every questions 🎉.
 - Expansion of knowledge on neural networks and natural language 🌟🌟🌟🌟🌟.
 - Convenient scripts for training and inference: `training.sh` and `inference.sh`.
 
@@ -46,7 +46,7 @@ $ ./training.sh
 Please be aware that intermediate training checkpoints of the network might occupy a significant amount of disk space. It is advisable to monitor and manage the checkpoints regularly to avoid running out of available disk space. 💾💾💾
 
 
-4. Test your work executing `inference.sh` 🚀 for an "supercazzola" example:
+4. Test your work executing `inference.sh` 🚀 for a "supercazzola" example response:
 
 ```console
 $ ./inference.sh # interence on LATEST checkpoint
@@ -78,7 +78,7 @@ Log end
 ```
 for a custom prompt
 
-You can altro try intermediate checkpoints to better understand how the network progressivery increase its performance.
+You can also try intermediate checkpoints to better understand how the network progressivery increase its performance.
 
 ```console
 $ ./inference.sh "Mi scusi?! Ma lei a clacsonato?" models/ggml-supercazzola-512x16-f32-100.gguf # interence on a previous checkpoint
@@ -94,7 +94,7 @@ Log end
 
 ```
 
-4. You can also utlize the model with the `llama.cpp` server.
+4. You can also infer the model with the `llama.cpp` server.
 
 ```
 TBD
@@ -108,16 +108,13 @@ TBD
 
 
 ### Credits:
+This project was conceived and developed with love by [buzzobuono] for educational purposes.
 
-This project owes its feasibility and functionality to the exiting `llama.cpp` repository by [ggerganov](https://github.com/ggerganov/llama.cpp), which provides essential capabilities for neural network training and inference in C++.
+This project owes its feasibility and functionality to the exiting `llama.cpp` repository by [ggerganov](https://github.com/ggerganov/llama.cpp), which provides essential capabilities for quantized llama neural network training and inference in C++.
 
 ### Contributions:
 
-We welcome contributions and improvements from the community. Feel free to contribute to the project if you have any ideas.
-
-### Credits:
-
-This project was conceived and developed with love by [buzzobuono] for educational purposes.
+We welcome contributions and improvements from interested. Feel free to contribute to the project if you have any ideas.
 
 ### License:
 
